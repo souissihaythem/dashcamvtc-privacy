@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DashcamVTC — caméras avant et arrière, et l'écran</title>
+  <meta name="description" content="DashcamVTC enregistre la route, l'habitacle et l'écran du téléphone. Les vidéos restent sur l'appareil. Premier mois offert, puis 1 € par mois.">
+  <style>
+    :root { color-scheme: dark; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #0e1116;
+      color: #f5f7fa;
+      line-height: 1.5;
+    }
+    a { color: #f5f7fa; }
+    header, main, footer { max-width: 960px; margin: 0 auto; padding: 1.5rem 1.25rem; }
+    header { display: flex; gap: 1.25rem; align-items: center; }
+    header img { width: 88px; height: 88px; border-radius: 20px; }
+    h1 { font-size: 2rem; margin: 0 0 0.25rem; }
+    .muted { color: #a8b0bc; }
+    .play {
+      display: inline-block;
+      margin-top: 1rem;
+      background: #e53935;
+      color: white;
+      text-decoration: none;
+      padding: 0.75rem 1.1rem;
+      border-radius: 999px;
+      font-weight: 700;
+    }
+    .shots { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0.75rem; }
+    .shots img { width: 100%; border-radius: 16px; background: #1a1f27; }
+    ul { padding-left: 1.1rem; }
+    footer { color: #a8b0bc; }
+    @media (max-width: 800px) {
+      .shots { grid-template-columns: repeat(2, 1fr); }
+      header { align-items: flex-start; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="icone-512.png" alt="Icône DashcamVTC">
+    <div>
+      <h1>DashcamVTC</h1>
+      <p class="muted">Caméra arrière, caméra avant, son, et l'écran du téléphone. Pour relier une course à ce qui s'est passé.</p>
+      <a class="play" href="https://play.google.com/store/apps/details?id=com.vtc.dashcam">Installer sur Google Play</a>
+    </div>
+  </header>
+  <main>
+    <div class="shots">
+      <img src="phone-direct.png" alt="Vue directe, caméras et enregistrement de l'écran">
+      <img src="phone-arriere.png" alt="Vidéos de la caméra arrière">
+      <img src="phone-ecran.png" alt="Vidéos de l'écran">
+      <img src="phone-reglages.png" alt="Réglages de qualité et de suppression">
+    </div>
+    <h2>Ce que l'application fait</h2>
+    <ul>
+      <li>Enregistre la caméra arrière, la caméra avant et le micro.</li>
+      <li>Peut enregistrer aussi ce qui s'affiche à l'écran pendant la session.</li>
+      <li>Continue quand vous quittez l'application, avec une notification et un bouton flottant.</li>
+      <li>S'arrête quand l'écran s'éteint, enregistre la vidéo, et reprend au réveil.</li>
+      <li>Les fichiers restent sur le téléphone. Vous pouvez les lire, les partager, en couper une partie, ou les supprimer.</li>
+      <li>Les extraits enregistrés ne sont pas supprimés automatiquement. Les autres vidéos peuvent l'être après le délai choisi.</li>
+      <li>Qualité au choix : 480p, 720p, 1080p ou 2160p.</li>
+    </ul>
+    <h2>Prix</h2>
+    <p>Le premier mois est offert. Ensuite 1 € par mois, via Google Play. Vous pouvez annuler dans Google Play.</p>
+  </main>
+  <footer>
+    <p>Éditeur : Souissi Haythem. Contact : <a href="mailto:haythemmm@gmail.com">haythemmm@gmail.com</a></p>
+    <p><a href="../">Règles de confidentialité</a></p>
+  </footer>
+</body>
+</html>
